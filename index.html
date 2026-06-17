@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>InCleanHome – Encuentra Personal Doméstico Confiable</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar">
+    <div class="container nav-inner">
+      <div class="logo">
+        <span class="logo-icon">🏠</span>
+        <span class="logo-text">InCleanHome</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#">Cómo Funciona</a></li>
+        <li><a href="#">Servicios</a></li>
+        <li><a href="#">Nosotros</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="#" class="btn-link">Iniciar sesión</a>
+        <a href="#" class="btn btn-primary">Ser un/a limpiador/a</a>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#">Cómo Funciona</a>
+      <a href="#">Servicios</a>
+      <a href="#">Nosotros</a>
+      <a href="#">Iniciar sesión</a>
+      <a href="#" class="btn btn-primary">Ser un/a limpiador/a</a>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero">
+    <div class="container hero-inner">
+      <div class="hero-content" data-animate>
+        <div class="badge">
+          <span class="badge-dot"></span>
+          Plataforma 100% en línea
+        </div>
+        <h1>Encuentra Personal Doméstico <span class="highlight">Confiable</span> y Verificado</h1>
+        <p>Reserva en minutos. Todos nuestros trabajadores pasan por verificación de antecedentes, entrevistas y capacitación profesional antes de conectarse contigo.</p>
+        <div class="hero-btns">
+          <a href="#search" class="btn btn-primary">Busca ahora <i class="fa fa-arrow-right"></i></a>
+          <a href="#" class="btn btn-outline">Ver cómo funciona</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat">
+            <strong>+5,000</strong>
+            <span>Clientes satisfechos</span>
+          </div>
+          <div class="stat">
+            <strong>4.9 ★</strong>
+            <span>Calificación promedio</span>
+          </div>
+          <div class="stat">
+            <strong>+30,000</strong>
+            <span>Servicios realizados</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-image" data-animate>
+        <div class="hero-img-wrap">
+          <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=500&q=80" alt="Limpiadora profesional" />
+          <div class="hero-badge-float">
+            <i class="fa fa-shield-halved"></i>
+            <span>Identidad verificada</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FEATURES ===== -->
+  <section class="features">
+    <div class="container features-grid">
+      <div class="feature-card" data-animate>
+        <div class="feat-icon green"><i class="fa fa-circle-check"></i></div>
+        <h3>100% Antecedentes Verificados</h3>
+        <p>Cada trabajador pasa por una revisión exhaustiva antes de conectarse contigo en la plataforma.</p>
+        <a href="#" class="feat-link">Saber más <i class="fa fa-arrow-right fa-xs"></i></a>
+      </div>
+      <div class="feature-card" data-animate>
+        <div class="feat-icon green"><i class="fa fa-credit-card"></i></div>
+        <h3>Pagos Digitales Seguros</h3>
+        <p>Transacciones simples y protegidas. Sin efectivo, sin riesgos, todo digital.</p>
+        <a href="#" class="feat-link">Saber más <i class="fa fa-arrow-right fa-xs"></i></a>
+      </div>
+      <div class="feature-card" data-animate>
+        <div class="feat-icon green"><i class="fa fa-star"></i></div>
+        <h3>Reservas Flexibles</h3>
+        <p>Elige el día y la hora que más te convengan. Cambios y cancelaciones sin complicaciones.</p>
+        <a href="#" class="feat-link">Saber más <i class="fa fa-arrow-right fa-xs"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SEARCH ===== -->
+  <section class="search-section" id="search">
+    <div class="container search-wrap">
+      <p class="section-label">Búsqueda Inteligente</p>
+      <h2>Encuentra el servicio que necesitas</h2>
+      <p class="section-sub">Filtra para encontrar el/la persona ideal que se ajuste a tus necesidades y disponibilidad.</p>
+
+      <div class="search-tabs">
+        <button class="tab active">Limpieza</button>
+        <button class="tab">Cocina</button>
+        <button class="tab">Jardín</button>
+        <button class="tab">Cuidados</button>
+      </div>
+
+      <div class="search-form">
+        <div class="form-row">
+          <div class="form-group">
+            <label><i class="fa fa-location-dot"></i> Ubicación</label>
+            <select>
+              <option>Selecciona tu ciudad</option>
+              <option>Ciudad de México</option>
+              <option>Guadalajara</option>
+              <option>Monterrey</option>
+              <option>Lima</option>
+              <option>Bogotá</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label><i class="fa fa-broom"></i> Tipo de Servicio</label>
+            <select>
+              <option>Selecciona el servicio</option>
+              <option>Limpieza profunda</option>
+              <option>Limpieza regular</option>
+              <option>Limpieza de mudanza</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label><i class="fa fa-calendar"></i> Disponibilidad</label>
+            <input type="date" />
+          </div>
+          <div class="form-group">
+            <label><i class="fa fa-clock"></i> Calificación Min.</label>
+            <select>
+              <option>Todas</option>
+              <option>4+ estrellas</option>
+              <option>4.5+ estrellas</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label><i class="fa fa-globe"></i> Idioma</label>
+            <select>
+              <option>Inglés / Español</option>
+              <option>Solo Español</option>
+              <option>Solo Inglés</option>
+            </select>
+          </div>
+        </div>
+        <button class="btn btn-primary btn-search">
+          <i class="fa fa-magnifying-glass"></i> Buscar profesionales
+        </button>
+        <p class="search-note">Resultados en menos de 30 segundos. Sin compromisos.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TESTIMONIALS ===== -->
+  <section class="testimonials">
+    <div class="container">
+      <p class="section-label">Testimonios Reales</p>
+      <h2>Familias que confían en nosotros</h2>
+      <p class="section-sub">Miles de hogares ya disfrutan de un hogar más limpio y ordenado.</p>
+
+      <div class="reviews-grid">
+        <div class="review-card" data-animate>
+          <div class="stars">★★★★★</div>
+          <p>"Reservé a Carmen en menos de 10 minutos. Llegó puntual, dejó la casa impecable y el proceso de pago fue súper seguro. ¡Lo recomiendo al 100%!"</p>
+          <div class="reviewer">
+            <div class="avatar green">SR</div>
+            <div>
+              <strong>Sofía Ramírez</strong>
+              <span>✓ Verificada</span>
+            </div>
+          </div>
+        </div>
+        <div class="review-card" data-animate>
+          <div class="stars">★★★★★</div>
+          <p>"Lo que más me da confianza es saber que todos los trabajadores pasan por verificación de antecedentes. La plataforma es clara, ágil y confiable."</p>
+          <div class="reviewer">
+            <div class="avatar blue">AH</div>
+            <div>
+              <strong>Andrés Herrera</strong>
+              <span>✓ Recurrente</span>
+            </div>
+          </div>
+        </div>
+        <div class="review-card" data-animate>
+          <div class="stars">★★★★★</div>
+          <p>"Nunca pensé que encontrar ayuda de confianza fuera tan sencillo. El resultado 20 y el proceso fue completamente perfecto. ¡Totalmente recomendado!"</p>
+          <div class="reviewer">
+            <div class="avatar teal">VM</div>
+            <div>
+              <strong>Valentina Mora</strong>
+              <span>✓ Lista favorita</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="reviews-more">
+        <button class="btn btn-outline">Ver todas las reseñas <i class="fa fa-chevron-down"></i></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA BANNER ===== -->
+  <section class="cta-banner">
+    <div class="container cta-inner">
+      <div class="cta-text">
+        <h2>¿Listo para tener un hogar más limpio?</h2>
+        <p>Únete a más de 5,000 familias que ya confían en nosotros. Reserva hoy mismo.</p>
+      </div>
+      <div class="cta-btns">
+        <a href="#" class="btn btn-white">Buscar ahora</a>
+        <a href="#" class="btn btn-outline-white">Registrarse como trabajador</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <div class="logo">
+          <span class="logo-icon">🏠</span>
+          <span class="logo-text">InCleanHome</span>
+        </div>
+        <p>La plataforma más segura y confiable para conectar hogares con personal doméstico verificado en México.</p>
+        <div class="socials">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Plataforma</h4>
+        <ul>
+          <li><a href="#">Cómo funciona</a></li>
+          <li><a href="#">Servicios</a></li>
+          <li><a href="#">Precios</a></li>
+          <li><a href="#">Para trabajadores</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Soporte</h4>
+        <ul>
+          <li><a href="#">Centro de ayuda</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Reportar problema</a></li>
+          <li><a href="#">Estado del servicio</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col footer-newsletter">
+        <h4>Newsletter</h4>
+        <p>Recibe consejos de seguridad y novedades de la plataforma.</p>
+        <div class="newsletter-form">
+          <input type="email" placeholder="Tu correo electrónico" />
+          <button class="btn btn-primary">Suscribir</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2024 InCleanHome. Todos los derechos reservados.</p>
+      <div class="footer-legal">
+        <a href="#">Política de privacidad</a>
+        <a href="#">Términos de servicio</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
