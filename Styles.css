@@ -4,12 +4,12 @@
 
 /* ---------- CSS Variables ---------- */
 :root {
-  --green: #00b272;
-  --green-dark: #009960;
-  --green-light: #e6f9f2;
-  --navy: #1a2e4a;
-  --text: #3a4a5c;
-  --text-light: #7a8fa6;
+  --green: #00B272;       
+  --green-dark: #009960;  
+  --green-light: #E6F9F2; 
+  --navy: #1A2E4A;        
+  --text: #3A4A5C;       
+  --text-light: #7A8FA6;   
   --bg: #f7fafc;
   --white: #ffffff;
   --border: #e2edf5;
@@ -754,4 +754,91 @@ section h2 {
   .form-row { grid-template-columns: 1fr; }
   .search-tabs { flex-wrap: wrap; width: 100%; }
   .hero-stats { gap: 20px; }
+}
+
+/* ===== SECCIÓN DE VIDEOS ===== */
+.videos-section {
+  padding: 80px 0;
+  background-color: #f9fafb;
+  text-align: center;
+}
+
+.videos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.video-card {
+  background: #ffffff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  text-align: left;
+  transition: transform 0.3s ease;
+}
+
+.video-card:hover {
+  transform: translateY(-5px);
+}
+
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* Mantiene proporción 16:9 de YouTube */
+  height: 0;
+  overflow: hidden;
+  background-color: #000;
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.video-info {
+  padding: 24px;
+}
+
+.video-info h3 {
+  font-size: 1.3rem;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #1f2937;
+}
+
+.video-info p {
+  color: #4b5563;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.green-text {
+  color: #10b981;
+}
+
+@media (max-width: 576px) {
+  .videos-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Ajuste para el nuevo logo en imagen */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Espacio entre la imagen y el texto */
+}
+
+.logo-img {
+  width: 32px;       /* Ajusta el ancho según el diseño de tu logo */
+  height: 32px;      /* Ajusta el alto de forma proporcional */
+  object-fit: contain;
+  display: inline-block;
 }
